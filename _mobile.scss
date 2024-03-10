@@ -1,0 +1,34 @@
+@media (max-width: 767px){
+	.my-website{
+		height: 735px;
+	}
+
+	.cover{
+		text-align: center;
+		height: 735px;
+		&__heading{
+			font-size: 32px;
+			line-height: 39px;
+			text-align: center;
+			padding-top: 239px;
+		}
+		&__description{
+			font-size: 14px;
+			line-height: 22px;
+			text-align: center;
+			width: auto;
+		}
+		&__button{
+			margin-top: 32px;
+		}
+	}
+	.games{
+		margin-left: 16px;
+		margin-right: 16px;
+		justify-content: center;
+		&__game{
+			min-width: 340px;
+		}
+	}
+	
+}
