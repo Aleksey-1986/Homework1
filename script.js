@@ -1,48 +1,38 @@
 
 //1
-let password = 'пароль';
-let userPassword = String(prompt('Введите пароль'));
-if (password === userPassword) {
-	alert('Пароль введен верно');
-} else {
-	alert('Пароль введен неправильно');
-}
+for (let i = 0; i < 2; i++) {
+	console.log("привет");
+};
 //2
-let c = Number(prompt('Введите число от "0" до "10"'));
-alert(c >= 0 && c <= 10 ? 'Верно' : 'Неверно');
+let i = 0;
+while (i < 5) {
+	i++;
+	console.log(i);
+};
 //3
-let d = Number(prompt('Введите два, любые числа чтоб одно из них было больше "100"'));
-let e = Number(prompt('и второе'));
-console.log(d >= 100 || e >= 100 ? 'Верно' : 'Неверно');
+for (let i = 7; i < 23; i++) {
+	console.log(i);
+};
 //4
-let a = '2';
-let b = '3';
-a = Number(a)
-b = Number(b)
-alert(a + b);
+let obj= {
+	'Коля': '200',
+	'Вася': '300',
+	'Петя': '400',
+};
+for (let key in obj) { 
+	alert(`${key} — зарплата  ${obj[key]} долларов`)
+};
 //5
-var monthNumber = Number(prompt("Введите номер месяца"));
-switch (monthNumber) {
-	case '1':
-	case '2':
-	case '12':
-		console.log('зима');
+let num = 1;
+for (let n = 1000; n > 0; num++) {
+	n = n / 2
+	if (n < 50) {
+		console.log(`в результате получилось ${n}`);
 		break;
-	case '3':
-	case '4':
-	case '5':
-		console.log('весна');
-		break;
-	case '6':
-	case '7':
-	case '8':
-		console.log('лето');
-		break;
-	case '9':
-	case '10':
-	case '11':
-		console.log('осень');
-		break;
-	default:
-		console.log('такого месяца не существует');
+	};
+};
+console.log(`количество проходов ${num}`);
+//6
+for (let i = 3; i <= 31; i += 7) {
+	console.log(`Сегодня пятница, ${i}-е число. Необходимо подготовить отчет.`);
 }
