@@ -51,11 +51,11 @@ body{
 		border: none;
 		margin-top: 44px;
 		color: #FFFFFF;
-		transition: all .4s;
+		transition: background-color .4s;
 	}
 	&__button:hover{
-		background-color: rgb(125, 172, 107);
-		color: #000;
+		background-color: rgb(235, 68, 63);;
+		cursor: pointer;
 	}
 }
 
@@ -63,6 +63,7 @@ body{
 	padding-top: 128px;
 	padding-bottom: 128px;
 	display: flex;
+	flex-wrap: wrap;
 	gap: 32px;
 	&__game{
 		display: flex;
@@ -73,7 +74,7 @@ body{
 		color: #FFFFFF;
 		border: none;
 		box-sizing: border-box;
-		width: 379px;
+		width: 378px;
 		height: 300px;
 		font-size: 24px;
 		font-weight: 600;
@@ -89,5 +90,9 @@ body{
 			background-image: url(../img/game3.jpeg);
 		}
 	}
+	&__game:hover{
+		border: 3px solid rgb(68, 210, 255);
+	}
 }
 
+@import'mobile';
