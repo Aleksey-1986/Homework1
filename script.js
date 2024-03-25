@@ -56,17 +56,17 @@ console.log(result);
 //9
 const array9 = [[1, 2, 3],[4, 5, 6]];
 let arr = [].concat(...array9);
-console.log(arr);
+console.log(arr);*/
 
 //10
 const array10 = [2, 3, 5, 8, 4, 7, 9];
-let arr = 0;
-for (const value of array10) {
-	arr += value;
-	console.log(arr);
+
+for (let i = 0 ; i < array10.length - 1; i++) {
+	console.log(array10[i] + array10[i + 1]);
 }
 
-//11
+
+/*//11
 const array11 = [1, 2, 4, 7];
 let square = array11
 function arr(square) {
@@ -94,7 +94,7 @@ for (let i = 0; i < 10; i++) {
 };
 console.log(array14);
 let evenNumbers = array14.filter(i => i % 2 === 0);
-console.log(evenNumbers);*/
+console.log(evenNumbers);
 
 //15
 const array15 = [];
@@ -106,4 +106,9 @@ console.log(array15);
 let value = array15.reduce((i, array15) => {
 	return i + array15/6
 }, 0);
-console.log(value);
+console.log(value);*/
+
+
+
+
+
