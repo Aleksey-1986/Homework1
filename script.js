@@ -1,80 +1,114 @@
 /*//1
-const comparison = (a, b) => {
-	return a <= b ? a : b;
-};
+const array = [1, 5, 4, 10, 0, 3];
+for (let index = 0; index < array.length; index++) {
+	console.log(array[index]);
+	if (array[index] === 10)
+		break;
+}
 
 //2
-let check = Number (prompt("проверка на четность"));
-function par (check) {
-	alert(check % 2 === 0 ? `${check} число четное` : `${check} число нечетное`);
-};
-par (check)
+const array2 = [1, 5, 4, 10, 0, 3];
+let ind = array2.indexOf(4);
+console.log(ind);
 
-//3.1
-let square = Number (prompt("введите число"));
-const par = (square) => console.log(square * square);
-par (square)
-
-//3.2
-let square = Number (prompt("введите число"));
-let par = (square) => square * square;
+//3
+const array3 = [1, 3, 5, 10, 20];
+let jo = array3.join(' ');
+console.log(jo);
 
 //4
-let user = Number (prompt("сколько вам лет?"));
-function age (user) {
-	if (user < 0) {
-		alert('Вы ввели неправильное значение')
-	} else if (user >= 0 && user <= 12) {
-		alert('Привет, друг!')
-	} else if (user >= 13 && user <= 130) {
-		alert('Добро пожаловать!')
-	} else {
-		alert('Люди столько не живут!!!')
+const array4 = [];
+for (let i = 0; i < 3; i++) {
+	array4.push([]);
+	for (let n = 0; n < 3; n++) {
+		array4[i].push(1);
 	}
 };
-age (user)
+console.log(array4);
 
 //5
-let number1 = Number (prompt("введите два числа"));
-let number2 = Number (prompt("введите второе число"));
-function numberHandler (number1, number2) {
-	if (isNaN(number1) || isNaN(number2)) {
-		return ('Одно или оба значения не являются числом');
-	} else {
-		return (number1 * number2);
-	}
-};
+const array5 = [1, 1, 1];
+array5.push(2, 2, 2)
+console.log(array5);
 
 //6
-let number = Number (prompt("введите число"));
-function numberHandler (number) {
-	if (isNaN(number)) {
-		return('Переданный параметр не является числом');
-	} else {
-		return(`${number} в кубе равняется ${number ** 3}`);
-	}
-};*/
+const array6 = [9, 8, 7, 'a', 6, 5];
+array6.sort();
+array6.pop();
+console.log(array6);
 
 //7
-function getArea() {
-	return 3.14 * this.radius * this.radius;
-}
-function getPerimeter() {
-	return 2 * 3.14 * this.radius;
-}
-
-const circle1 = {
-	radius: 13,
-	getArea: getArea,
-	getPerimeter: getPerimeter,
-};
-const circle2 = {
-	radius: 7,
-	getArea: getArea,
-	getPerimeter: getPerimeter,
+const array7 = [9, 8, 7, 6, 5];
+const guess = Number(prompt('Попробуй угадать число'))
+if (array7.includes(guess)) { 
+	alert ('Угадал');
+} else {
+	alert ('Не угадал');
 };
 
-console.log(circle2.getArea());
-console.log(circle1.getArea());
-console.log(circle2.getPerimeter());
-console.log(circle1.getPerimeter());
+//8
+const array8 = 'abcdef';
+let arr = array8.split('');
+arr.reverse();
+let result = arr.join('');
+console.log(result);
+
+//9
+const array9 = [[1, 2, 3],[4, 5, 6]];
+let arr = [].concat(...array9);
+console.log(arr);*/
+
+//10
+const array10 = [2, 3, 5, 8, 4, 7, 9];
+
+for (let i = 0 ; i < array10.length - 1; i++) {
+	console.log(array10[i] + array10[i + 1]);
+}
+
+
+/*//11
+const array11 = [1, 2, 4, 7];
+let square = array11
+function arr(square) {
+	return square.map(i => i ** 2);
+}
+console.log(arr(square));
+
+//12
+const array12 = ["слова", "произвольные", "писать", "?"];
+const arr = array12.map(array12 => {
+	return array12.length
+});
+console.log(arr);
+
+//13
+const array13 = [3, -7, 9, 2, -8, -1, 0];
+const arr = array13.filter(i => i < 0);
+console.log(arr);
+
+//14
+const array14 = [];
+for (let i = 0; i < 10; i++) {
+	let arr = Math.ceil(Math.random() * 10);
+	array14.push(arr)
+};
+console.log(array14);
+let evenNumbers = array14.filter(i => i % 2 === 0);
+console.log(evenNumbers);
+
+//15
+const array15 = [];
+for (let i = 0; i < 6; i++) {
+	let arr = Math.ceil(Math.random() * 10);
+	array15.push(arr)
+};
+console.log(array15);
+let value = array15.reduce((i, array15) => {
+	return i + array15/6
+}, 0);
+console.log(value);*/
+
+
+
+
+
