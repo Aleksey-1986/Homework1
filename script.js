@@ -1,37 +1,27 @@
 /*//1
 
 let upperCase = 'js'
-console.log(upperCase.toUpperCase());
+console.log(upperCase.toUpperCase());*/
 
-//2
+//2 
 
-let insects = ['таракан', 'Муха', 'пчела', 'Паук', 'муравей', 'комар', 'Оса',]
-let syllable = 'му'
-console.log(insects)
-let selection = []
-insects.forEach((insect) => {
-	if (insect.toLowerCase().includes(syllable.toLowerCase())) {
-		selection.push(insect)
+function inse (insects, syllable) {
+	
+	let selection = []
+
+	for (let i = 0; i < insects.length; i++) {
+		
+		if (insects[i].toLowerCase().startsWith(syllable.toLowerCase())) {
+			selection.push(insects[i])
+		}
 	}
-})
-console.log(selection)
-
-//2 или так (задание не понял)
-
-let insects = ['таракан', 'Муха', 'пчела', 'Паук', 'муравей', 'комар', 'Оса',];
-console.log(insects)
-let selection = []
-function insect() {
-	for (let i = 1; i < insects.length; i++) {
-		selection.push(insects[i])
-	}
+	return selection
 }
-insect()
-console.log(selection)
+console.log(inse(['таракан', 'Муха', 'пчела', 'Паук', 'муравей', 'комар', 'Оса'], 'му'))
 
 //3
 
-let num = 32.58884
+/*let num = 32.58884
 console.log(Math.ceil(num))
 console.log(Math.floor(num))
 console.log(Math.round(num))
