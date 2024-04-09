@@ -31,24 +31,28 @@ function seasons(){
 
 function seasons2(){
 
-	let a = 'Яблоко'
-	let b = 'Груша'
-	let c = 'Дыня'
-	let d = 'Виноград'
-	let e = 'Персик'
-	let f = 'Апельсин'
-	let g = 'Мандарин'
-	const fruits = []
-	fruits.push(a, b, c, d, e, f, g)
+	const fruits = [
+		'Яблоко',
+		'Груша',
+		'Дыня',
+		'Виноград',
+		'Персик',
+		'Апельсин',
+		'Мандарин']
 	const fru = [...fruits].sort(() => Math.random() - 0.5)
 	alert(fru)
 	let first = prompt('какой был первый фрукт')
 	let last = prompt('какой был последний фрукт')
-	if (first.toLowerCase() === fru[0].toLowerCase() && last.toLowerCase() === fru[fru.length - 1].toLowerCase()) {
-		alert('Правильно!')
-	} else if (first.toLowerCase() === fru[0].toLowerCase() || last.toLowerCase() === fru[fru.length - 1].toLowerCase()) {
-		alert('один фрукт не правильный')
-	} else {
-		alert('Ай, неправильно')
+	
+	block: {if (first === null || last === null) {
+			break block;
+		} else if (first.toLowerCase() === fru[0].toLowerCase() && last.toLowerCase() === fru[fru.length - 1].toLowerCase()) {
+			alert('Правильно!')
+			
+		} else if (first.toLowerCase() === fru[0].toLowerCase() || last.toLowerCase() === fru[fru.length - 1].toLowerCase()) {
+			alert('один фрукт не правильный')
+		} else {
+			alert('Ай, неправильно')
+		}
 	}
 }
