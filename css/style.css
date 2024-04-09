@@ -138,10 +138,23 @@ body {
   cursor: pointer;
 }
 
-.picture1 {
+.picture {
   width: 485px;
   height: 333px;
-  background-image: url(../img/Seasons.svg);
+}
+
+.picture1 {
+  background-image: url(../img/Seasons1.svg);
+  background-repeat: no-repeat;
+}
+
+.department2 {
+  flex-direction: row-reverse;
+}
+
+.picture2 {
+  background-image: url(../img/Seasons2.svg);
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 767px) {
@@ -176,6 +189,8 @@ body {
     min-width: 340px;
   }
   .department {
+    margin-top: 51px;
+    padding-bottom: 0;
     margin-left: 16px;
     margin-right: 16px;
     justify-content: center;
@@ -192,12 +207,19 @@ body {
     font-size: 14px;
     line-height: 22px;
   }
-  .picture1 {
+  .picture {
     margin-top: 64px;
-    background-image: url(../img/Seasons_min.png);
-    background-repeat: no-repeat;
+    margin-bottom: 85px;
     background-position: center;
     max-width: 344px;
     max-height: 236px;
+  }
+  .picture1 {
+    background-image: url(../img/Seasons_min1.png);
+    background-repeat: no-repeat;
+  }
+  .picture2 {
+    background-image: url(../img/Seasons_min2.png);
+    background-repeat: no-repeat;
   }
 }/*# sourceMappingURL=style.css.map */

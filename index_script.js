@@ -28,3 +28,31 @@ function seasons(){
 			alert('такого месяца не существует');
 	}
 }
+
+function seasons2(){
+
+	const fruits = [
+		'Яблоко',
+		'Груша',
+		'Дыня',
+		'Виноград',
+		'Персик',
+		'Апельсин',
+		'Мандарин']
+	const fru = [...fruits].sort(() => Math.random() - 0.5)
+	alert(fru)
+	let first = prompt('какой был первый фрукт')
+	let last = prompt('какой был последний фрукт')
+	
+	block: {if (first === null || last === null) {
+			break block;
+		} else if (first.toLowerCase() === fru[0].toLowerCase() && last.toLowerCase() === fru[fru.length - 1].toLowerCase()) {
+			alert('Правильно!')
+			
+		} else if (first.toLowerCase() === fru[0].toLowerCase() || last.toLowerCase() === fru[fru.length - 1].toLowerCase()) {
+			alert('один фрукт не правильный')
+		} else {
+			alert('Ай, неправильно')
+		}
+	}
+}

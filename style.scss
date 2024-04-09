@@ -140,12 +140,24 @@ body{
 	}
 }
 
-.picture1{
+.picture{
 	width: 485px;
 	height: 333px;
-	background-image: url(../img/Seasons.svg);
 }
 
+.picture1{
+	background-image: url(../img/Seasons1.svg);
+	background-repeat: no-repeat;
+}
+
+.department2{
+	flex-direction: row-reverse
+}
+
+.picture2{
+	background-image: url(../img/Seasons2.svg);
+	background-repeat: no-repeat;
+}
 
 
 @import'mobile';
